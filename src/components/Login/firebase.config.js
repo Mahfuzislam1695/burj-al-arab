@@ -1,10 +1,9 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyCgowAyORyoR5Fx-9wDG_9kQx2AGEUPN9g",
-    authDomain: "burj-al-arab-9325d.firebaseapp.com",
-    projectId: "burj-al-arab-9325d",
-    storageBucket: "burj-al-arab-9325d.appspot.com",
-    messagingSenderId: "879351368576",
-    appId: "1:879351368576:web:94cf5698b79b14b0a40f65"
-  };
-
-  export default firebaseConfig;
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+};
+export default firebaseConfig;
